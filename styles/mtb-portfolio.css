@@ -1,10 +1,23 @@
+
+h1, h2, h3, p{
+    color: white;
+}
+
 h1{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    font-size: 72px;
+    text-transform: uppercase;
+    line-height: 84px;
+    letter-spacing: 0.1em;
 }
 h2{
     font-family: 'Roboto', sans-serif;
-    font-weight: medium;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 28px;
+    letter-spacing: 0.1em;
 }
 
 p{
@@ -15,5 +28,30 @@ p{
 h3{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+
+}
+
+body{
+
+}
+
+.hero{
+    text-align: center;
+    background-image: url(/images/hero-background2.jpg);
+    padding: 160px 20px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.btn-branding{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 17px;
+    background: #FFFFFF;
+    color: #272142;
+    border-radius: 50px;
+    padding: 18px, 30px, 18px, 30px;
 
 }
