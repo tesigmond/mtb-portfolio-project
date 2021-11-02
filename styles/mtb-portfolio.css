@@ -1,7 +1,8 @@
 h1,
 h2,
 h3,
-p {
+p,
+a {
   color: white;
 }
 
@@ -34,6 +35,15 @@ p {
 h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 .btn {
@@ -81,6 +91,21 @@ h3 {
   padding: 0 144px 144px 144px;
 }
 
+.contact-me-hero {
+  text-align: center;
+  padding: 70px 0px;
+}
+
+.contact-me {
+  text-align: center;
+}
+
+.contact-me h2 {
+  color: #f65282;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 @media (max-width: 576px) {
   .homepage-gallery img {
     margin-top: 20px;
@@ -115,7 +140,7 @@ h3 {
   .gallery-hero {
     padding: 80px 20px 20px 20px;
   }
-  .gallery-hero h1 {
+  h1 {
     font-size: 44px;
   }
 }
