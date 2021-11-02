@@ -72,6 +72,14 @@ h3 {
 .about-me h1 {
   font-size: 44px;
 }
+.gallery-hero {
+  text-align: center;
+  padding: 150px;
+}
+
+.gallery {
+  padding: 0 144px 144px 144px;
+}
 
 @media (max-width: 576px) {
   .homepage-gallery img {
@@ -90,10 +98,24 @@ h3 {
   .hero p {
     display: none;
   }
+
+  .gallery img {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 992px) {
   .about-me img {
     margin-bottom: 20px;
+  }
+
+  .gallery {
+    padding: 20px;
+  }
+  .gallery-hero {
+    padding: 80px 20px 20px 20px;
+  }
+  .gallery-hero h1 {
+    font-size: 44px;
   }
 }
