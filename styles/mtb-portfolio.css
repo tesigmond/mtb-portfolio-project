@@ -39,11 +39,44 @@ h3 {
 
 a {
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
 a:hover {
   text-decoration: underline;
   color: white;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  color: white;
+  margin-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+nav li.active a {
+  color: #f65282;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f65282;
+  text-decoration: none;
 }
 
 .btn {
@@ -126,6 +159,10 @@ a:hover {
 
   .gallery img {
     margin-top: 20px;
+  }
+
+  .contact-me-hero h1 {
+    font-size: 36px;
   }
 }
 
