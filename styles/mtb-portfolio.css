@@ -79,6 +79,21 @@ nav a:hover {
   text-decoration: none;
 }
 
+footer{
+    padding: 40px 0;
+}
+
+footer .social-links a{
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+footer .social-links a:hover{
+color: #f65282;
+text-decoration: none;
+}
+
 .btn {
   padding: 9px 44.5px;
 }
