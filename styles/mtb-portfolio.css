@@ -1,3 +1,9 @@
+:root {
+  --branding-color-secondary: #f65282;
+  --font-family-primary: "Roboto", sans-serif;
+  --font-family-secondary: "Montserrat", sans-serif;
+}
+
 h1,
 h2,
 h3,
@@ -11,7 +17,7 @@ body {
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family-primary);
   font-weight: bold;
   font-size: 72px;
   text-transform: uppercase;
@@ -19,7 +25,7 @@ h1 {
   letter-spacing: 0.1em;
 }
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family-primary);
   font-weight: bold;
   font-size: 24px;
   text-transform: uppercase;
@@ -28,18 +34,18 @@ h2 {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family-primary);
   font-weight: regular;
 }
 
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-family-secondary);
   font-weight: bold;
 }
 
 a {
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family-primary);
 }
 
 a:hover {
@@ -70,28 +76,28 @@ nav a {
 }
 
 nav li.active a {
-  color: #f65282;
+  color: var(--branding-color-secondary);
   font-weight: bold;
 }
 
 nav a:hover {
-  color: #f65282;
+  color: var(--branding-color-secondary);
   text-decoration: none;
 }
 
-footer{
-    padding: 40px 0;
+footer {
+  padding: 40px 0;
 }
 
-footer .social-links a{
-    margin: 0 10px;
-    padding: 10px;
-    font-size: 18px;
+footer .social-links a {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 18px;
 }
 
-footer .social-links a:hover{
-color: #f65282;
-text-decoration: none;
+footer .social-links a:hover {
+  color: var(--branding-color-secondary);
+  text-decoration: none;
 }
 
 .btn {
@@ -99,7 +105,7 @@ text-decoration: none;
 }
 
 .btn-branding {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-family-secondary);
   border-radius: 25px;
   font-weight: bold;
   text-transform: uppercase;
@@ -119,11 +125,11 @@ text-decoration: none;
 }
 
 .about-me {
-  padding: 120px 60px;
+  padding: 70px 60px;
 }
 
 .about-me h2 {
-  color: #f65282;
+  color: var(--branding-color-secondary);
   font-size: 18px;
 }
 
@@ -132,7 +138,7 @@ text-decoration: none;
 }
 .gallery-hero {
   text-align: center;
-  padding: 150px;
+  padding: 90px;
 }
 
 .gallery {
@@ -149,16 +155,13 @@ text-decoration: none;
 }
 
 .contact-me h2 {
-  color: #f65282;
+  color: var(--branding-color-secondary);
   font-size: 14px;
   line-height: 16px;
 }
 
-@media (max-width: 576px) {
-  .homepage-gallery img {
-    margin-top: 20px;
-  }
 
+@media (max-width: 576px) {
   h1 {
     font-size: 44px;
     line-height: 1.5;
@@ -166,6 +169,9 @@ text-decoration: none;
 
   h2 {
     font-size: 20px;
+  }
+  .homepage-gallery img {
+    margin-top: 20px;
   }
 
   .hero p {
@@ -179,9 +185,28 @@ text-decoration: none;
   .contact-me-hero h1 {
     font-size: 36px;
   }
+
+  .contact-button {
+    display: flex;
+    justify-content: center;
+  }
+  .about-me {
+    padding: 40px 40px;
+  }
+}
+
+.source-code-link a{
+    text-decoration: underline;
+}
+
+.source-code-link a:hover{
+    color: var(--branding-color-secondary)
 }
 
 @media (max-width: 992px) {
+  h1 {
+    font-size: 44px;
+  }
   .about-me img {
     margin-bottom: 20px;
   }
@@ -191,8 +216,5 @@ text-decoration: none;
   }
   .gallery-hero {
     padding: 80px 20px 20px 20px;
-  }
-  h1 {
-    font-size: 44px;
   }
 }
